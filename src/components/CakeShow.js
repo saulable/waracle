@@ -18,11 +18,11 @@ class CakeShow extends Component {
 		}
 		return (
 			<div className="container-fluid add-margi">
-			<Link to="/"> Back to the cakes, yum yum. </Link>
+			<Link to="/view_all"> Back to the cakes, yum yum. </Link>
 
 			<h2>Cake name: {cake.name}</h2>
 			<img alt=""className="single-cake-image" src={cake.imageUrl} />
-			<h3>Yum Rating: {cake.yumFactor}</h3>
+			<h3>Yum Rating:  {cake.yumFactor}</h3>
 			<p>{cake.comment}</p>
 			</div>
 

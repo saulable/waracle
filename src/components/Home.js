@@ -7,10 +7,10 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div className="wrapper">
-				<div className="card" style={{width:'25%'}}>
+				<div className="card" style={{width:'45%'}}>
 					<img src="/img/cakes.png" className="card-img-top" alt=""/>
 					<div className="card-body">
-						<h5 className="card-title">Card title</h5>
+						<h5 className="card-title">Cake Directory</h5>
 						<p className="card-text">
 							Welcome to the world's best cake making app! Click below to view our cakes!
 						</p>
@@ -19,10 +19,10 @@ export default class Home extends Component {
 						</Link>
 					</div>
 				</div>
-				<div className="card" style={{width:'25%'}}>
+				<div className="card" style={{width:'45%'}}>
 					<img src="/img/submit.png" className="card-img-top"alt=""  />
 					<div className="card-body">
-						<h5 className="card-title">Card title</h5>
+						<h5 className="card-title">Submit a cake</h5>
 						<p className="card-text">
 							Interested in joining part of the viral trend of cakes? Click below and submit your favourite cake!
 						</p>

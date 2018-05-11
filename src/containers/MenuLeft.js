@@ -38,8 +38,8 @@ class LeftMenu extends Component{
 				</Link>
 				<ul className="left-nav list-unstyled components">
 
-					<li><Link to="view_all">View All Cakes</Link></li>
-					<li><Link to="submit">Submit Cakes</Link></li>
+					<li><Link to="/view_all">View All Cakes</Link></li>
+					<li><Link to="/submit">Submit Cakes</Link></li>
 				</ul>
 			</nav>
 		);

@@ -3,7 +3,6 @@
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
-
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -60,7 +59,21 @@ a, a:hover, a:focus {
 	min-height: 100vh;
 	flex-direction: column;
 }
-
+.card{
+	margin:15px 2.5% 15px 2.5%;
+}
+.cake-list li {
+	background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.cake-list li span{
+	margin-left: 15px;
+	vertical-align: top;
+	position: relative;
+	top: 10px;
+}
 #sidebar {
     min-width: 250px;
     max-width: 250px;
