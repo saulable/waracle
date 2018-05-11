@@ -1,17 +1,35 @@
 import axios from 'axios';
-const API_KEY = 'd319f2dc62a2fa1da1bfab06251b625c';
-const ROOT_URL = 'http://food2fork.com/api/search?key=';
-let QUERY = '&q=';
+const ROOT_URL =
+	'http://ec2-34-243-153-154.eu-west-1.compute.amazonaws.com:5000/api/cakes';
 
 export const FETCH_DATA = 'FETCH_DATA';
+export const CREATE_CAKE = 'CREATE CAKE';
+export const FETCH_CAKE = 'FETCH CAKE';
 
-export function fetchRecipes(query){
+export const fetchRecipes = query => {
 	// console.log('hit the api');
 
-	const url = `${ROOT_URL}${API_KEY}${QUERY}${query}`;
-	const request = axios.get(url).then((data) => {return data;} );
+	const request = axios.get(ROOT_URL).then(data => {
+		return data;
+	});
 	return {
 		type: FETCH_DATA,
 		payload: request
 	};
-}
+};
+
+export const createCake = (values, callback) => {
+	const request = axios.post(`${ROOT_URL}`, values).then(() => callback());
+	return {
+		type: CREATE_CAKE,
+		payload: request
+	};
+};
+
+export function fetchCake(id){
+	const request = axios.get(`${ROOT_URL}/${id}`);
+	return {
+		type: FETCH_CAKE,
+		payload: request
+	};
+};

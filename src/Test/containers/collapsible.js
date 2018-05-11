@@ -28,7 +28,7 @@ class Collapsible extends Component {
 			<div>
 				<li>
 					<a
-						href="http://localhost:3000"
+						href="#"
 						onClick={e => this.handleClick(e)}
 						data-toggle="collapse"
 						aria-expanded={this.state.open}

@@ -1,0 +1,23 @@
+.searchBar{
+	margin-top: 10px;
+}
+.small-image{
+	max-width: 100px;
+}
+.cake-list{
+	list-style: none;
+}
+.cake-list li{
+	margin: 20px 0px;
+
+}
+.submit-cake{
+	width: 100%;
+	margin-top: 20px;
+}
+.add-margin{
+	margin-top: 20px;
+}
+.single-cake-image{
+	max-width: 400px;
+}

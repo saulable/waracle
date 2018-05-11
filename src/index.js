@@ -1,13 +1,25 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import { store } from "./store.js";
-import { router } from "./router.js";
+import './stylesheets/style.css';
+import './stylesheets/main.css';
 
-// render the main component
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import {createStore, applyMiddleware} from 'redux';
+
+
+import App from './components/App';
+import reducers from './reducers';
+import ReduxPromise from 'redux-promise';
+
+import registerServiceWorker from './registerServiceWorker';
+
+const store = createStore(reducers, {}, applyMiddleware(ReduxPromise));
+
 ReactDOM.render(
-  <Provider store={store}>
-    {router}
-  </Provider>,
-  document.getElementById('app')
+	<Provider store={store}>
+		<App />
+	</Provider>,
+	document.getElementById('root')
 );
+
+registerServiceWorker();

@@ -1,11 +1,12 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
+import {reducer as formReducer} from 'redux-form';
 import fetchDataReducer from './fetch_recipes';
 
 // main reducers
-export const reducers = combineReducers({
-	routing: routerReducer,
+export default combineReducers({
 	form: formReducer,
-	forkrecipes: fetchDataReducer
+	routing: routerReducer,
+	cakerecipes: fetchDataReducer
 	// your reducer here
 });

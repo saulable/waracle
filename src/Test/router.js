@@ -4,8 +4,8 @@ import { history } from './store.js';
 import App from './components/App';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
-import LeftMenu from './containers/menu_left';
-import SearchBar from './components/searchbar';
+import LeftMenu from './containers/MenuLeft';
+import SearchBar from './components/SearchBar';
 
 // build the router
 const router = (
